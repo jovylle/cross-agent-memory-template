@@ -1,4 +1,4 @@
-# Cross-agent memory template
+# Shared memory (cross-agent template)
 
 A reusable layout for **one local memory vault** shared by Claude Code, GitHub Copilot CLI, and Kiro. Claude can use a skill and the ECC CLI; Copilot and Kiro can use the optional ECC MCP server. The actual memories stay on your machine. This repository contains **synthetic examples only**, not a hosted service or anyone's private vault.
 
@@ -23,7 +23,7 @@ User-scope recall is opt-in: CLI commands need `--scope user`, and MCP calls nee
 **Copilot CLI:** Merge [clients/copilot/copilot-instructions.md](clients/copilot/copilot-instructions.md) into `~/.copilot/copilot-instructions.md`. Register the server for your user account:
 
 ```sh
-copilot mcp add ecc-memory-vault \
+copilot mcp add shared-memory \
   --env ECC_MEMORY_HARNESS=copilot \
   --env ECC_MEMORY_ALLOW_USER_SCOPE=1 \
   -- ecc-memory-mcp

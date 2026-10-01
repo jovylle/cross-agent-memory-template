@@ -3,7 +3,7 @@ name: shared-memory
 description: Search or save local cross-agent context shared with Copilot CLI and Kiro. Use for a past decision, recurring issue, task resumption, or handoff; skip self-contained requests and do not preload at session start.
 ---
 
-# Shared memory
+# Shared memory (cross-agent)
 
 Use the local ECC CLI with explicit user scope. If `ecc` is not on the shell's `PATH`, resolve its installed absolute path before running it. Do not use an MCP server to bypass an access policy.
 

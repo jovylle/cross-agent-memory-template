@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "ecc-memory-vault": {
+    "shared-memory": {
       "command": "ecc-memory-mcp",
       "env": {
         "ECC_MEMORY_HARNESS": "kiro",
